@@ -6,6 +6,8 @@ Essential features
  - Change possible inputs to Doubles || Floats.
  - Add shapes (Perimeter + Area).
  - Angles (sin || cos || tan).
+ - exponents as fractions.
+ - decimals to fractions conversions.
 
 EXTRAS
 ====
