@@ -24,6 +24,18 @@ void Div(float x, float y)
     printf("The answer is: %f\n", ans);
 }
 
+void Pow(float x, float y)
+{       
+    float ans = 1;
+    int i;
+    for(i = 0; i < y; i++)
+    {
+        ans = ans * x;
+    }
+    printf("The answer is: %f\n", ans);
+}   
+
+
 int main()
 {
 
@@ -75,6 +87,13 @@ int main()
                 printf("Please insert a number\n");
                 scanf("%f", &num2);
                 Div(num1, num2);
+                break;
+            case 5:
+                printf("\nPlease insert a base\n");
+                scanf("%f", &num1);
+                printf("Please insert an exponent\n");
+                scanf("%f", &num2);
+                Pow(num1, num2);
                 break;
             default:
                 break;
