@@ -11,9 +11,8 @@ EXTRAS
 ====
  - Screen clear when getting back to the menu.
  
+
+LANGUAGE SUPPORT?
 ====
- 
- LANGUAGE SUPPORT ?
- 
  - Java
  - Web (HTML, CSS, JS)
