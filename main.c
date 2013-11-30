@@ -2,8 +2,13 @@
 
 void Add(int x, int y)
 {
-    int i;
     int ans = x + y;
+    printf("The answer is: %d\n", ans);
+}
+
+void Sub(int x, int y)
+{
+    int ans = x - y;
     printf("The answer is: %d\n", ans);
 }
 
@@ -24,18 +29,24 @@ int main()
         printf("4 - Division\n");
         printf("0 - Quit\n");
 
+        printf("Choice: ");
         scanf("%d", &choice);
 
         switch(choice)
         {
             case 1:
-                printf("Please insert a number\n");
+                printf("\nPlease insert a number\n");
                 scanf("%d", &num1);
                 printf("Please insert a number\n");
                 scanf("%d", &num2);
                 Add(num1, num2);
                 break;
             case 2:
+                printf("\nPlease insert a number\n");
+                scanf("%d", &num1);
+                printf("Please insert a number\n");
+                scanf("%d", &num2);
+                Sub(num1, num2);
                 break;
             case 3:
                 break;
