@@ -1,35 +1,37 @@
 #include <stdio.h>
 
-void Add(int x, int y)
+void Add(float x, float y)
 {
-    int ans = x + y;
-    printf("The answer is: %d\n", ans);
+    float ans = x + y;
+    printf("The answer is: %f\n", ans);
 }
 
-void Sub(int x, int y)
+void Sub(float x, float y)
 {
-    int ans = x - y;
-    printf("The answer is: %d\n", ans);
+    float ans = x - y;
+    printf("The answer is: %f\n", ans);
 }
 
-void Mul(int x, int y)
+void Mul(float x, float y)
 {
-    int ans = x * y;
-    printf("The answer is: %d\n", ans);
+    float ans = x * y;
+    printf("The answer is: %f\n", ans);
 }
 
-void Div(int x, int y)
+void Div(float x, float y)
 {
-    int ans = x / y;
-    printf("The answer is: %d\n", ans);
+    float ans = x / y;
+    printf("The answer is: %f\n", ans);
 }
 
 int main()
 {
 
     int choice;
-    int num1;
-    int num2;
+    float num1;
+    float num2;
+    
+    system("clear");
 
     do
     {
@@ -48,30 +50,30 @@ int main()
         {
             case 1:
                 printf("\nPlease insert a number\n");
-                scanf("%d", &num1);
+                scanf("%f", &num1);
                 printf("Please insert a number\n");
-                scanf("%d", &num2);
+                scanf("%f", &num2);
                 Add(num1, num2);
                 break;
             case 2:
                 printf("\nPlease insert a number\n");
-                scanf("%d", &num1);
+                scanf("%f", &num1);
                 printf("Please insert a number\n");
-                scanf("%d", &num2);
+                scanf("%f", &num2);
                 Sub(num1, num2);
                 break;
             case 3:
                 printf("\nPlease insert a number\n");
-                scanf("%d", &num1);
+                scanf("%f", &num1);
                 printf("Please insert a number\n");
-                scanf("%d", &num2);
+                scanf("%f", &num2);
                 Mul(num1, num2);
                 break;
             case 4:
                 printf("\nPlease insert a number\n");
-                scanf("%d", &num1);
+                scanf("%f", &num1);
                 printf("Please insert a number\n");
-                scanf("%d", &num2);
+                scanf("%f", &num2);
                 Div(num1, num2);
                 break;
             default:
