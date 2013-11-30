@@ -12,6 +12,18 @@ void Sub(int x, int y)
     printf("The answer is: %d\n", ans);
 }
 
+void Mul(int x, int y)
+{
+    int ans = x * y;
+    printf("The answer is: %d\n", ans);
+}
+
+void Div(int x, int y)
+{
+    int ans = x / y;
+    printf("The answer is: %d\n", ans);
+}
+
 int main()
 {
 
@@ -49,8 +61,18 @@ int main()
                 Sub(num1, num2);
                 break;
             case 3:
+                printf("\nPlease insert a number\n");
+                scanf("%d", &num1);
+                printf("Please insert a number\n");
+                scanf("%d", &num2);
+                Mul(num1, num2);
                 break;
             case 4:
+                printf("\nPlease insert a number\n");
+                scanf("%d", &num1);
+                printf("Please insert a number\n");
+                scanf("%d", &num2);
+                Div(num1, num2);
                 break;
             default:
                 break;
