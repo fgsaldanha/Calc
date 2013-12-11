@@ -36,7 +36,7 @@ void Pow(float x, float y)
         z = y * -1;
     }
     
-    for(i = 0; i < y; i++)
+    for(i = 0; i < y || i < z; i++)
     {
         ans = ans * x;
         rec = 1/ans;
