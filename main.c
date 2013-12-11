@@ -27,12 +27,29 @@ void Div(float x, float y)
 void Pow(float x, float y)
 {       
     float ans = 1;
+    float rec = 1;
+    float z;
     int i;
+
+    if(y < 0)
+    {
+        z = y * -1;
+    }
+    
     for(i = 0; i < y; i++)
     {
         ans = ans * x;
+        rec = 1/ans;
     }
-    printf("The answer is: %f\n", ans);
+    
+    if(y > 0)
+    {
+        printf("The answer is: %f\n", ans);
+    }
+    else 
+    {
+        printf("The answer is: %f\n", rec);
+    }
 }   
 
 
@@ -53,6 +70,7 @@ int main()
         printf("2 - Subtraction\n");
         printf("3 - Multiplication\n");
         printf("4 - Division\n");
+        printf("5 - Exponent\n");
         printf("0 - Quit\n");
 
         printf("Choice: ");
