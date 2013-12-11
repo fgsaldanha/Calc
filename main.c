@@ -33,12 +33,12 @@ void Pow(float x, float y)
 
     if(y < 0)
     {
-        z = y * -1;
+        z = -y;
     }
     
     for(i = 0; i < y || i < z; i++)
     {
-        ans = ans * x;
+        ans *= x;
         rec = 1/ans;
     }
     
