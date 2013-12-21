@@ -50,6 +50,47 @@ void Pow(float x, float y)
     {
         printf("The answer is: %f\n", rec);
     }
+void Conv(float x, float y)
+{
+    int n = x * 10;
+    int d = y * 10;
+    if(n % 2 == 0 && d % 2 == 0)
+    {
+	while(n % 2 == 0 && d % 2 == 0)
+	{
+		n = n / 2;
+		d = d / 2;
+	}
+	printf("The answer is: %d", n);
+	printf("/");
+	printf("%d",d);
+    }
+    if(n % 3 == 0 && d % 3 == 0)
+    {
+	while(n % 3 == 0 && d % 3 == 0)
+	{
+		n = n / 3;
+		d = d / 3;
+	}
+	printf("The answer is: %d", n);
+	printf("/");
+	printf("%d",d);
+    }
+    if(n % 5 == 0 && d % 5 == 0)
+    {
+	while(n % 5 == 0 && d % 5 == 0)
+	{
+		n = n / 5;
+		d = d / 5;
+	}
+	printf("The answer is: %d", n);
+	printf("/");
+	printf("%d",d);
+    }
+    else
+    {
+	printf("The answer is: %f", x);
+    }
 }   
 
 
@@ -71,6 +112,7 @@ int main()
         printf("3 - Multiplication\n");
         printf("4 - Division\n");
         printf("5 - Exponent\n");
+        printf("6 - Convert\n");
         printf("99 - Help\n");
         printf("0 - Quit\n");
 
@@ -113,13 +155,18 @@ int main()
                 printf("Please insert an exponent\n");
                 scanf("%f", &num2);
                 Pow(num1, num2);
-                break;
+            case 6:
+		printf("\nPlease insert the decimal\n");
+		scanf("%f", &num1);
+		num2 = 1;
+		Conv(num1, num2);
+		break;
             case 99:
-				printf("\n101 - to clear the screen\n");
-				break;
-			case 101:
-				system("clear");
-				break;
+		printf("\n101 - to clear the screen\n");
+		break;
+      	    case 101:
+	        system("clear");
+		break;
             default:
                 break;
         }
