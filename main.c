@@ -71,6 +71,7 @@ int main()
         printf("3 - Multiplication\n");
         printf("4 - Division\n");
         printf("5 - Exponent\n");
+        printf("99 - Help\n");
         printf("0 - Quit\n");
 
         printf("Choice: ");
@@ -113,6 +114,12 @@ int main()
                 scanf("%f", &num2);
                 Pow(num1, num2);
                 break;
+            case 99:
+				printf("\n101 - to clear the screen\n");
+				break;
+			case 101:
+				system("clear");
+				break;
             default:
                 break;
         }
