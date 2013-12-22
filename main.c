@@ -50,31 +50,28 @@ void Pow(float x, float y)
     {
         printf("The answer is: %f\n", rec);
     }
+}
+
 void Conv(float x, float y)
 {
-    int n = x * 10;
-    int d = y * 10;
-    if(n % 2 == 0 && d % 2 == 0)
+    int n = x * 100;
+    int d = y * 100;
+
+    if(n % 11 == 0 && d % 11 == 0)
     {
-	while(n % 2 == 0 && d % 2 == 0)
+ 	while(n % 11 == 0 && d % 11 == 0)
 	{
-		n = n / 2;
-		d = d / 2;
+		n = n / 11;
+		d = d / 11;
 	}
-	printf("The answer is: %d", n);
-	printf("/");
-	printf("%d",d);
     }
-    if(n % 3 == 0 && d % 3 == 0)
+    if(n % 7 == 0 && d % 7 == 0)
     {
-	while(n % 3 == 0 && d % 3 == 0)
+	while(n % 7 == 0 && d % 7 == 0)
 	{
-		n = n / 3;
-		d = d / 3;
+		n = n / 7;
+		d = d / 7;
 	}
-	printf("The answer is: %d", n);
-	printf("/");
-	printf("%d",d);
     }
     if(n % 5 == 0 && d % 5 == 0)
     {
@@ -83,15 +80,27 @@ void Conv(float x, float y)
 		n = n / 5;
 		d = d / 5;
 	}
-	printf("The answer is: %d", n);
-	printf("/");
-	printf("%d",d);
     }
-    else
+    if(n % 3 == 0 && d % 3 == 0)
     {
-	printf("The answer is: %f", x);
+	while(n % 3 == 0 && d % 3 == 0)
+	{
+		n = n / 3;
+		d = d / 3;
+	}
     }
-}   
+    if(n % 2 == 0 && d % 2 == 0)
+    {
+	while(n % 2 == 0 && d % 2 == 0)
+	{
+		n = n / 2;
+		d = d / 2;
+	}
+    }
+    printf("The answer is: %d", n);
+    printf("/");
+    printf("%d\n",d);
+}
 
 
 int main()
