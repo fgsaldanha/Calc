@@ -102,6 +102,21 @@ void Conv(float x, float y)
     printf("%d\n",d);
 }
 
+int squareRoot(int number)
+{
+	int found = 0;
+	int i = number;
+	do
+	{
+		if(number%(i*i)==0)
+		{
+			printf("The answer is: %d\n", i);
+			found = 1;
+		}
+		i = i -1;
+	}while(found == 0);
+}
+
 
 int main()
 {
@@ -122,6 +137,7 @@ int main()
         printf("4 - Division\n");
         printf("5 - Exponent\n");
         printf("6 - Convert\n");
+        printf("7 - Square Root\n");
         printf("99 - Help\n");
         printf("0 - Quit\n");
 
@@ -170,6 +186,11 @@ int main()
 		num2 = 1;
 		Conv(num1, num2);
 		break;
+	    case 7:
+	    	printf("\nPlease insert a positive integer\n");
+	    	scanf("%f", &num1);
+	    	squareRoot(num1);
+	    	break;
             case 99:
 		printf("\n101 - to clear the screen\n");
 		break;
