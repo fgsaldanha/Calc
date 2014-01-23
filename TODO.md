@@ -6,6 +6,7 @@ Essential features
  - Add shapes (Perimeter + Area).
  - Angles (sin || cos || tan).
  - decimals to fractions conversions.
+ - matrices functions (add && subtract && multi)
 
 EXTRAS
 ====
