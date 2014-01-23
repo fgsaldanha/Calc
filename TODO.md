@@ -7,7 +7,7 @@ Essential features
  - Angles (sin || cos || tan).
  - decimals to fractions conversions.
  - matrices functions (add && subtract...).
- - draw shapes (2D & 3D)
+ - draw shapes (2D & 3D).
 
 EXTRAS
 ====
